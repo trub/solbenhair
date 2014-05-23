@@ -14,6 +14,7 @@
         <!-- STYLESHEETS : begin -->
 		<link rel="stylesheet" type="text/css" href="library/css/style.css"> 
         <link rel="stylesheet" type="text/css" href="library/css/skin/lavender.css">
+        <link rel="stylesheet" type="text/css" href="library/css/reservations/modal.css">
 		<!-- <link rel="stylesheet" type="text/css" href="library/css/custom.css"> -->
 		<!-- STYLESHEETS : end -->
 
@@ -24,7 +25,7 @@
 		<script src="library/js/modernizr.custom.min.js" type="text/javascript"></script>
 
 	</head>
-	<body>
+	<body>	
 
 		<!-- HEADER : begin -->
 		<header id="header" class="m-animated">
@@ -73,7 +74,7 @@
 
 						<!-- HEADER RESERVATION : begin -->
 						<div class="header-reservation">
-							<a href="ajax/reservation-form.html" class="c-button m-open-ajax-modal">Make a Reservation</a>
+							<a href="#modal" class="c-button m-open-ajax-modal" >Make a Reservation</a>					
 						</div>
 						<!-- HEADER RESERVATION : end -->
 
@@ -150,6 +151,21 @@
 
 		<!-- WRAPPER : begin -->
 		<div id="wrapper">
+
+			<section>
+					<div id="modal">
+								<div class="modal-content">
+									<div class="cf footer">
+										<a href="#" class="btn">Close</a>
+									</div>
+									<div class="copy">
+										  <iframe src="https://sol-ben.youcanbook.me/?noframe=true&skipHeaderFooter=true" style="width:100%;height:500px;border:0px;background-color:transparent;" frameborder="0" allowtransparency="true" onload="keepInView(this);"></iframe>
+						<script>function keepInView(item) {if((document.documentElement&&document.documentElement.scrollTop)||document.body.scrollTop>item.offsetTop)item.scrollIntoView();}</script>
+									</div>	
+								</div>
+								<div class="overlay"></div>
+							</div>
+			</section>
 
 			<!-- MAIN SLIDER : begin -->
 			<div id="main-slider" class="m-has-hover-stop" data-interval="8000">
@@ -499,6 +515,12 @@
 			<!-- BOTTOM PANEL : end -->
 		</div>
 		<!-- WRAPPER : end -->
+
+		<!-- SCRIPTS : begin -->
+		<script src="library/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+		<script src="https://youcanbook.me/resources/scripts/ycbm.modal.js"></script>
+		<!-- SCRIPTS : end -->
+
 
 
 	</body>
