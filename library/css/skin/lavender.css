@@ -546,6 +546,7 @@ a:hover {
 .header-bg {
   background-color: #2094d7;
   background-color: rgba(32, 148, 215, 0.9);
+  opacity: 0.93;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(230, 6, 255, 0.6)), to(#2094d7));
   background-image: -webkit-linear-gradient(top, rgba(230, 6, 255, 0.6), #2094d7);
   background-image: -moz-linear-gradient(top, rgba(230, 6, 255, 0.6), #2094d7);
