@@ -429,7 +429,7 @@
 ----------------------------------------------------------------------------- */
 
 #header { color: $header-font; background: $color-2 url( $header-bg-image ) 0 0 no-repeat; background-size: cover; }
-.header-bg { background-color: $color-2; background-color: rgba( $color-2, .9 ); opacity: 0.93; @include vertical-gradient( rgba( $color-1, 0.6 ), $color-2 ); }
+.header-bg { background-color: $color-2; background-color: rgba( $color-2, .9 ); opacity: 0.933; @include vertical-gradient( rgba( $color-1, 0.6 ), $color-2 ); }
 .cssgradients .header-bg { background-color: rgba( $color-2, .5 ); }
 .header-inner { background-image: url( $header-animated-image ); background-repeat: repeat-x; background-position: 0 0; }
 
